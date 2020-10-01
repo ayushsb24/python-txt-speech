@@ -5,12 +5,11 @@ voice_id = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN
 #sets Rates
 happy.setProperty('rate', 150) 
 
-txt=input("Enter Text : ")
+txt=input("Enter Text to Speak: ")
 # Use female voice 
 happy.setProperty('voice', voice_id) 
 happy.say(txt)
 happy.say("")
-
 
 happy.runAndWait()
 
